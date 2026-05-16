@@ -1,14 +1,36 @@
+Solutions
+Case studies
+Docs
+API
+Community
+Teach
+Play
+
+2.3.21
+JVM
+Program arguments
+Copy link
+Share code
+Run
+A
 //  ae_2026_Jean_Mora_clase_4 main.kt
 //estructura del commit clase_4 {{valor incremental}}
 fun main() {
-    // siempre debo tirar mis variable (o constantes)
-    val name: String = "Ana"
-    val email: String = "ana@gmail.com"
-    val number: Int = 67
-    // Ana - ana@gmail.com
+    val grade: Int = 85
     
-    println(name + " - " + email)
-    println("$name - $email")
-    println("te faltan ${100 - number} para llegar a 100")
-   
+    if (grade > 70){
+        println("Aprobado")
+    }   else{
+        println("Reprobado")
+    }
+    
+    val result:String = if (grade > 70){
+        "Aprobado"
+    }   else {
+        "Reprobado"
+    }
+    
+    print(result)
 }
+Aprobado
+Aprobado
