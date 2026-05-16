@@ -1,36 +1,23 @@
-Solutions
-Case studies
-Docs
-API
-Community
-Teach
-Play
-
-2.3.21
-JVM
-Program arguments
-Copy link
-Share code
-Run
-A
 //  ae_2026_Jean_Mora_clase_4 main.kt
 //estructura del commit clase_4 {{valor incremental}}
+data class Student(
+    val id: Long,
+    val name: String,
+    val email: String,
+    val grade: Int,
+    val isActive: Boolean
+)
+
 fun main() {
-    val grade: Int = 85
+    val jorge = Student(
+        name = "jorge",
+        email = "jorge@puce.com",
+        grade = 8,
+        id = 1,
+        isActive = true
+     
+    )
     
-    if (grade > 70){
-        println("Aprobado")
-    }   else{
-        println("Reprobado")
-    }
-    
-    val result:String = if (grade > 70){
-        "Aprobado"
-    }   else {
-        "Reprobado"
-    }
-    
-    print(result)
+    val ana = Student(1, "Ana", "ana@puce.com",10,true)
+    println(jorge)
 }
-Aprobado
-Aprobado
