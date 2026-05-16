@@ -42,7 +42,19 @@ fun getResult(grade: Int): String {
 }
 
 fun main() {
+    val estudiantesEstudiosos: MutableList<Student> = mutableListOf()
     for (student in getStudents()) {
-        println("${student.name} está ${getResult(student.grade)}")
+        if(student.grade>7){
+            estudiantesEstudiosos.add(student)
+        }
+        
     }
+    println(estudiantesEstudiosos)
+    
+    val estudiantesEstudiosos2: List<Student> = getStudents().filter { loQueSea ->
+        loQueSea.grade > 7 
+        
+    }
+    
+    println(estudiantesEstudiosos2)
 }
