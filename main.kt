@@ -2,14 +2,13 @@
 //estructura del commit clase_4 {{valor incremental}}
 fun main() {
     // siempre debo tirar mis variable (o constantes)
-    val mensaje: String = "Hola mundo "
-    var variableMutable: Int = 5
-    println(mensaje)
-    println(variableMutable)
+    val name: String = "Ana"
+    val email: String = "ana@gmail.com"
+    val number: Int = 67
+    // Ana - ana@gmail.com
     
-    variableMutable = 10
-    println(variableMutable)
-    
-    mensaje: String = "Hola mundo mutado "
-    println(mensaje)
+    println(name + " - " + email)
+    println("$name - $email")
+    println("te faltan ${100 - number} para llegar a 100")
+   
 }
